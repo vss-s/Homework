@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900,600,400,300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300');
+body{
+    margin: 0;
+}
+.wrapper{
+    width: 1110px;
+    margin: 0 auto;
+}
+.page-header{
+    padding-top: 38px;
+    padding-bottom: 101px; 
+}
+.menu {
+    float: right;
+    width: 480px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-item {
+   float: left;
+   color: #0E1116;
+   margin-right: 31px;
+   cursor: pointer;  
+}
+.menu-item:last-child{
+    margin-right: 0;
+}
+.item-link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    color: #0f0101;  
+}
+.item-link:hover{
+    color: #1abc9c;
+}
+.logo{
+    float: left;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+    color: #605e5e;  
+}
+.logo::first-letter{
+    content: '';
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.6px;
+    color: #1abc9c;  
+}
+.clearfix::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.products{
+    padding-bottom: 105px; 
+}
+.news{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.section-name, .topic-title{
+    margin: 0;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 94px;
+    line-height: 38px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #515151;
+}
+.topic-title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section-name::after{
+    display: block;
+    width: 165px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.topic-title::after{
+    display: block;
+    width: 165px;
+    height: 7px;
+    background-color: #1abc9c;
+    content: '';
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.product-list, .news-list{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 30px;
+}
+.news-list{
+    padding-bottom: 81px;
+}
+.content{
+    float: left;
+    width: 255px;
+    background-color: #e9f0fd;
+}
+.product-list:last-child{
+    padding-bottom: 0;
+}
+.news-item{
+    float: left;
+    width: 350px;
+}
+.content:not(:nth-child(4n)),
+.news-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+
+img{
+    display: block;
+    width: 255px;
+    height: 275px;
+}
+.product-link{
+    display: block;
+    float: left;
+    width: 179px;
+    background-color: #323232;
+    padding: 3px 10px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    border: 1px solid #323232;
+}
+.content:hover .product-link{
+    background-color: #1abc9c;
+    border: 1px solid  #1abc9c;
+}
+.content:hover .prod-price{
+    background-color: #7fd9c7;
+}
+.prod-price{
+    display: block;
+    float: right;
+    width: 30px;
+    padding: 4px 12px 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    background-color: #8c8c8c;
+    color: #ffffff;
+}
+.prod-price::before{
+    content: "\0024";
+}
+
+.news-img{
+    display: block;
+    width: 350px;
+    height: 263px;
+}
+
+.title{
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #555252;
+}
+.title::after{
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #1abc9c;
+    content: '';
+    margin-top: 8px;
+}
+p{
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #555252; 
+}
+.readmore{
+    margin: 0;
+    padding: 11px 39px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #f3fbf9;
+    border: 1px solid #1abc9c;
+    background-color: #1abc9c; 
+    border-radius: 2.5px;
+    cursor: pointer; 
+}
+
+
