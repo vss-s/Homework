@@ -36,6 +36,7 @@
 
 .menu-link:hover{
     color: rgba(26, 188, 156);
+    cursor: pointer;
 }
 
 .container{
