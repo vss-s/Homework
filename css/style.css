@@ -94,10 +94,12 @@
 
 .left-button:hover{
     background-image:  url("../img/left-arrow.png"),linear-gradient(rgba(26, 188, 156, 0.8), rgba(26, 188, 156, 0.8));
+    cursor: pointer;
 }
 
 .right-button:hover{
     background-image: url("../img/right-arrow.png"), linear-gradient(rgba(26, 188, 156, 0.8), rgba(26, 188, 156, 0.8));
+    cursor: pointer;
 }
 
 .main-container{
@@ -204,6 +206,7 @@
 
 .like-button:hover, .mix-button:hover, .later-button:hover{
     background-color: rgb(26, 188, 156);
+    cursor: pointer;
 }
 
 .like-button{
@@ -220,6 +223,7 @@
 
 .tocart-button{
     width: 166px;
+    height: 50px;
     margin-top: 7px;
     background-image: url("../img/cart-icon.png");
     background-color: rgb(50, 50, 50);
@@ -230,13 +234,14 @@
     font-size: 14px;
     text-transform: uppercase;
     color: white;
-    padding: 20px 0 20px 40px;
+    padding: 20px 20px 20px 40px;
     border: 1px solid white;
 }
 
 .tocart-button:hover{
     /* font-weight: bold; */
     background-color: rgb(19, 19, 19);
+    cursor: pointer;
 }
 
 .footer{
