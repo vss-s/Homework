@@ -36,6 +36,7 @@
 
 .menu-link:hover{
     color: rgba(26, 188, 156);
+    cursor: pointer;
 }
 
 .container{
@@ -237,6 +238,7 @@
 .tocart-button:hover{
     /* font-weight: bold; */
     background-color: rgb(19, 19, 19);
+    cursor: pointer;
 }
 
 .footer{
