@@ -94,10 +94,12 @@
 
 .left-button:hover{
     background-image:  url("../img/left-arrow.png"),linear-gradient(rgba(26, 188, 156, 0.8), rgba(26, 188, 156, 0.8));
+    cursor: pointer;
 }
 
 .right-button:hover{
     background-image: url("../img/right-arrow.png"), linear-gradient(rgba(26, 188, 156, 0.8), rgba(26, 188, 156, 0.8));
+    cursor: pointer;
 }
 
 .main-container{
@@ -208,18 +210,22 @@
 
 .like-button{
     background-image: url("../img/heart-icon.png");
+    cursor: pointer;
 }
 
 .mix-button{
     background-image: url("../img/mix-icons.png");
+    cursor: pointer;
 }
 
 .later-button{
     background-image: url("../img/later-icon.png");
+    cursor: pointer;
 }
 
 .tocart-button{
     width: 166px;
+    height: 50px;
     margin-top: 7px;
     background-image: url("../img/cart-icon.png");
     background-color: rgb(50, 50, 50);
@@ -237,6 +243,7 @@
 .tocart-button:hover{
     /* font-weight: bold; */
     background-color: rgb(19, 19, 19);
+    cursor: pointer;
 }
 
 .footer{
