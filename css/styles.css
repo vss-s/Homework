@@ -1,0 +1,354 @@
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 1202px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin-bottom: 80px;
+}
+
+.page-nav {
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  flex-basis: 492px;
+  justify-content: space-between;
+}
+
+.main-nav a {
+  color: rgb(149, 225, 211);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  transition: all 0.2s linear;
+}
+
+.main-nav a:hover {
+  color: rgb(243, 129, 129);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.main-nav a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  cursor: auto;
+}
+
+.main-nav a:hover::after,
+.main-nav a:focus::after {
+  opacity: 1;
+}
+
+.pre {
+  color: rgb(51, 51, 51);
+  font-family: "Kaushan Script", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(51, 51, 51);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: -10px;
+}
+
+h2::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: rgb(243, 129, 129);
+  margin: 0 auto;
+}
+
+.services {
+  margin-bottom: 100px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 256px;
+  align-items: center;
+  align-content: space-between;
+}
+
+.services-list-item {
+  justify-content: space-between;
+  padding-left: 80px;
+  flex-basis: 380px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.services-list-item h4 {
+  color: rgb(51, 51, 51);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+h4::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 20px;
+  left: 20px;
+}
+
+.item-1::after {
+  background-image: url("https://image.ibb.co/kSpvvS/icon_1.png");
+}
+
+.item-2::after {
+  background-image: url("https://image.ibb.co/fYq2aS/icon_2.png");
+}
+
+.item-3::after {
+  background-image: url("https://image.ibb.co/kDwavS/icon_3.png");
+}
+
+.item-4::after {
+  background-image: url("https://image.ibb.co/bU0Ppn/icon_4.png");
+}
+
+.item-5::after {
+  background-image: url("https://image.ibb.co/iKjjpn/icon_5.png");
+}
+
+.item-6::after {
+  background-image: url("https://image.ibb.co/cm3Yh7/icon_6.png");
+}
+
+.services-list-item span {
+  color: rgb(153, 153, 153);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.team {
+  margin-bottom: 100px;
+}
+
+.team-desc {
+  color: rgb(153, 153, 153);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.category-image {
+  margin-bottom: 25px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+
+.member-name {
+  color: rgb(51, 51, 51);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.member-position {
+  color: rgb(153, 153, 153);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300i;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.team-list-item {
+  position: relative;
+}
+
+.team-list-item:hover .team-list-item-gradient {
+  /* opacity: 0.9; */
+  visibility: visible;
+}
+
+.team-list-item-gradient {
+  background-image: linear-gradient(
+    180deg,
+    rgb(243, 129, 129) 0%,
+    rgb(252, 227, 138) 100%
+  );
+  width: 100%;
+  height: 470px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+  visibility: hidden;
+  box-shadow: 10px 10px rgba(149, 225, 211, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.2s linear;
+}
+
+.button-holder {
+  width: 224px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bt {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 54px;
+  height: 54px;
+  background: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.bt:hover,
+.bt:focus {
+  background-color: rgb(149, 225, 211);
+}
+
+.facebook {
+  background-image: url("https://image.ibb.co/i6Tc9n/icon_f.png");
+}
+
+.twitter {
+  background-image: url("https://image.ibb.co/fxQ2aS/icon_t.png");
+}
+
+.pinterest {
+  background-image: url("https://image.ibb.co/mNSth7/icon_p.png");
+}
+
+.instagram {
+  background-image: url("https://image.ibb.co/k4keN7/icon_i.png");
+}
+
+/* footer::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgb(229, 229, 229);
+} */
+
+footer {
+  min-height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  box-shadow: 0px -2px rgb(231, 231, 231);
+}
+footer a {
+  text-decoration-line: none;
+  color: rgb(243, 129, 129);
+}
+
+footer input {
+  border: solid 1px rgb(231, 231, 231);
+  height: 40px;
+  flex-basis: 229px;
+  color: rgb(231, 231, 231);
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300i;
+  padding: 15px;
+}
+
+footer button {
+  height: 40px;
+  flex-basis: 151px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color:#ffffff;
+  background: rgb(149, 225, 211);
+  border: none;
+}
