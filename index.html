@@ -1,127 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <title>homework-06</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Module-7</title>
 </head>
-
 <body>
-    <nav class="wrapper">
-        <a href="#" class="logo">MoGo</a>
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#" class="item-link">About</a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="item-link">Service</a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="item-link">Work</a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="item-link">Blog</a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="item-link">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <main class="main wrapper">
+    <div class="hero">
+        <header class="header">
+            <img src="./img/header-logo@1X.png" alt="header logo" class="header__img">
+            <ul class="header__menu">
+                <li class="header__item"><a href="#" class="menu__link">Home</a></li>
+                <li class="header__item"><a href="#" class="menu__link">Services</a></li>
+                <li class="header__item"><a href="#" class="menu__link">Portfolio</a></li>
+                <li class="header__item"><a href="#" class="menu__link">About</a></li>
+                <li class="header__item"><a href="#" class="menu__link">Contact</a></li>
+            </ul>
+        </header>
         <section class="services">
-            <p class="subtitle">We work with</p>
-            <h2 class="title">Amazing services</h2>
-            <ul class="services-collection">
-                <li class="service-card">
-                    <h5 class="service-title">photography</h5>
-                    <p class="service-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            <h2 class="services__title">Services</h2>
+            <p class="services__sub">Proin iaculis purus consequat sem cure. </p>
+            <ul class="services__menu">
+                <li class="services__item">
+                    <svg class="services__icon">
+                        <use href="./img/symbol-defs.svg#icon-Basket"></use>
+                    </svg>
+                    <h4 class="services__name">E-Commerce</h4>
+                    <p class="services__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
-                <li class="service-card">
-                    <h5 class="service-title">web design</h5>
-                    <p class="service-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                <li class="services__item">
+                    <svg class="services__icon">
+                        <use href="./img/symbol-defs.svg#icon-Laptop"></use>
+                    </svg>
+                    <h4 class="services__name">Responsive Web</h4>
+                    <p class="services__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
-                <li class="service-card">
-                    <h5 class="service-title">creativity</h5>
-                    <p class="service-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                </li>
-                <li class="service-card">
-                    <h5 class="service-title">seo</h5>
-                    <p class="service-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                </li>
-                <li class="service-card">
-                    <h5 class="service-title">css/html</h5>
-                    <p class="service-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                </li>
-                <li class="service-card">
-                    <h5 class="service-title">digital</h5>
-                    <p class="service-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                <li class="services__item">
+                    <svg class="services__icon">
+                        <use href="./img/symbol-defs.svg#icon-Locked"></use>
+                    </svg>
+                    <h4 class="services__name">Web Security</h4>
+                    <p class="services__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
                 </li>
             </ul>
-        </section>
-        <section class="team">
-            <p class="subtitle">Who we are</p>
-            <h2 class="team-title">meet our team</h2>
-            <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id necessitatibus sint inventore aut amet, vitae
-                non provident cupiditate temporibus ea mollitia esse impedit tenetur eveniet deserunt asperiores magnam dolorem!</p>
-            <ul class="team-collection">
-                <li class="team-card">
-                    <div class="backgr-color">
-                        <div class="hover-container">
-                            <div class="social-container">
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="name">matthew dixx</p>
-                    <p class="occupation">Graphic Design</p>
-                </li>
-                <li class="team-card">
-                    <div class="backgr-color">
-                        <div class="hover-container">
-                            <div class="social-container">
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="name">christopher campbell</p>
-                    <p class="occupation">Branding/UX design</p>
-                </li>
-                <li class="team-card">
-                    <div class="backgr-color">
-                        <div class="hover-container">
-                            <div class="social-container">
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                                <button class="social-button"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="name">michael fertig</p>
-                    <p class="occupation">Developer</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer class="wrapper">
-        <p class="footer-text">&copy; 2016 MoGo free PSD template by
-            <span class="footer-name">Laaqiq</span>
-        </p>
-        <form class="footer-form" action="">
-            <input type="text" class="email" placeholder="Your Email...">
-            <input class="submit" type="submit" value="subscribe">
+        </div>
+    </div>
+    <section class="contacts">
+        <h2 class="contacts__title">Contact us</h2>
+        <p class="contacts__sub">Proin iaculis purus consequat sem cure. </p>
+        <form action="" class="contacts__form">
+            <div class="form__wrapper">
+                <div class="form-left">
+                    <input type="text" name="Name" required class="input-name" placeholder="Your Name *"> 
+                    <input type="email" name="Email" required class="input-email" placeholder="Your Email *">
+                    <input type="text" name="Subject" class="input-subject" placeholder="Subject">
+                </div>
+                <textarea name="Message" required class="input-message" placeholder="Your Message *"></textarea>
+            </div>
+            <input type="submit" value="Send message" class="btn" >
         </form>
-    </footer>
+    </section>
 </body>
-
 </html>
