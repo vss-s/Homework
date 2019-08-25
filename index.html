@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Module-7</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HS Homework 07</title>
 </head>
+
 <body>
-    <div class="hero">
-        <header class="header">
-            <img src="./img/header-logo@1X.png" alt="header logo" class="header__img">
-            <ul class="header__menu">
-                <li class="header__item"><a href="#" class="menu__link">Home</a></li>
-                <li class="header__item"><a href="#" class="menu__link">Services</a></li>
-                <li class="header__item"><a href="#" class="menu__link">Portfolio</a></li>
-                <li class="header__item"><a href="#" class="menu__link">About</a></li>
-                <li class="header__item"><a href="#" class="menu__link">Contact</a></li>
-            </ul>
-        </header>
-        <section class="services">
-            <h2 class="services__title">Services</h2>
-            <p class="services__sub">Proin iaculis purus consequat sem cure. </p>
-            <ul class="services__menu">
-                <li class="services__item">
-                    <svg class="services__icon">
-                        <use href="./img/symbol-defs.svg#icon-Basket"></use>
-                    </svg>
-                    <h4 class="services__name">E-Commerce</h4>
-                    <p class="services__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </li>
-                <li class="services__item">
-                    <svg class="services__icon">
-                        <use href="./img/symbol-defs.svg#icon-Laptop"></use>
-                    </svg>
-                    <h4 class="services__name">Responsive Web</h4>
-                    <p class="services__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </li>
-                <li class="services__item">
-                    <svg class="services__icon">
-                        <use href="./img/symbol-defs.svg#icon-Locked"></use>
-                    </svg>
-                    <h4 class="services__name">Web Security</h4>
-                    <p class="services__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
-                </li>
-            </ul>
+    <header>
+        <div class="wrapper">
+            <nav class="page-nav">
+                <a class="site-logo" href="#">Golden</a>
+                <ul class="main-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <section class="contacts">
-        <h2 class="contacts__title">Contact us</h2>
-        <p class="contacts__sub">Proin iaculis purus consequat sem cure. </p>
-        <form action="" class="contacts__form">
-            <div class="form__wrapper">
-                <div class="form-left">
-                    <input type="text" name="Name" required class="input-name" placeholder="Your Name *"> 
-                    <input type="email" name="Email" required class="input-email" placeholder="Your Email *">
-                    <input type="text" name="Subject" class="input-subject" placeholder="Subject">
-                </div>
-                <textarea name="Message" required class="input-message" placeholder="Your Message *"></textarea>
-            </div>
-            <input type="submit" value="Send message" class="btn" >
-        </form>
-    </section>
+    </header>
+    <main class="main-content">
+        <div class="wrapper">
+            <h1 class="visually-hidden">Golden main page</h1>
+            <section class="services">
+                <h2>Services</h2>
+                <p class="desc">Lorem ipsum dolor sit amet.</p>
+                <ul class="services-list">
+                    <li class="services-list-item">
+                        <h4 class="item-1">E-Commerce</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, nam?</span>
+                    </li>
+                    <li class="services-list-item">
+                        <h4 class="item-2">Responsive Web</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, nam?</span>
+                    </li>
+                    <li class="services-list-item">
+                        <h4 class="item-3">Web Security</h4>
+                        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, nam?</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section class="contact">
+            <div class="map-holder"></div>
+            <h2>Contact us</h2>
+            <p class="desc">Lorem ipsum dolor sit amet.</p>
+            <form class="send-message" action="#" method="post">
+                <ul class="form-list">
+                    <div class="form-wrapper">
+                        <li>
+                            <input type="text" required autofocus name="name" id="id_name" placeholder="Your name *">
+                        </li>
+                        <li>
+                            <input type="email" required name="email" id="id_email" placeholder="Your e-mail *">
+                        </li>
+                        <li>
+                            <input type="text" name="subject" id="id_subject" placeholder="Subject">
+                        </li>
+                        <li>
+                            <textarea required name="message" id="id_message" cols="30" rows="10" placeholder="Your message *"></textarea>
+                        </li>
+                    </div>
+                </ul>
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>

@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'WisdomScriptAJ';       /* название одно */
+  src: url('../fonts/WisdomScriptAJ.woff'); /* разные файлы */
+  font-weight: 400;              /* разный вес/жирность */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';       /* название одно */
+  src: url('../fonts/roboto-slab-v7-latin-regular.woff'); /* разные файлы */
+  font-weight: 400;              /* разный вес/жирность */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';       /* название одно */
+  src: url('../fonts/noto-sans-v7-latin-regular.woff'); /* разные файлы */
+  font-weight: 400;              /* разный вес/жирность */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';       /* название одно */
+  src: url('../fonts/noto-sans-v7-latin-italic.woff'); /* разные файлы */
+  font-weight: 400;              /* разный вес/жирность */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';       /* название одно */
+  src: url('../fonts/montserrat-v12-latin-regular.woff'); /* разные файлы */
+  font-weight: 400;              /* разный вес/жирность */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';       /* название одно */
+  src: url('../fonts/montserrat-v12-latin-600.woff'); /* разные файлы */
+  font-weight: 600;              /* разный вес/жирность */
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 940px;
+  margin: auto;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.site-logo {
+  font-family: "WisdomScriptAJ", sans-serif;
+  color: #fed136;
+  font-size: 26px;
+  line-height: 41px;
+  text-align: left;
+}
+
+.page-nav {
+  /* min-height: 90px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.main-nav {
+  display: flex;
+  flex-basis: 486px;
+  justify-content: space-between;
+  text-transform: uppercase;
+  line-height: 41px;
+  text-align: center;
+}
+
+.main-nav a {
+  color: #222222;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #fed136;
+}
+
+h2 {
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.desc {
+  color: #777777;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+}
+
+.services-list-item h4 {
+  color: rgb(34, 34, 34);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+
+}
+
+.services-list-item span {
+  color: #777777;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.services-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  .services-list-item h4::before {
+    display: block;
+    content: "";
+    width: 70px;
+    height: 70px;
+    border: 3px solid rgb(254, 209, 54);
+    padding: 15px;
+    border-radius: 50%;
+    background-image: url("http://image.ibb.co/g6Q2LS/Icon_Basket.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.services-list-item:nth-child(2) h4::before {
+  background-image: url("http://image.ibb.co/mEHGfS/Icon_Laptop.png");
+}
+
+.services-list-item:nth-child(3) h4::before {
+  background-image: url("http://image.ibb.co/derL77/Icon_Locked.png");
+}
+
+.services {
+  margin-bottom: 110px;
+}
+
+.contact {
+  background-color: rgb(34, 34, 34);
+  min-height: 676px;
+  padding-top: 100px;
+  position: relative;
+
+}
+
+.map-holder {
+  margin: 0 auto;
+  height: 676px;
+  width: 1400px;
+  background-image: url("http://image.ibb.co/btKXkS/Map_Image.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: transparent;
+}
+
+.contact h2 {
+  color: rgb(255, 255, 255);
+}
+
+.send-message input {
+  width: 456px;
+  height: 52px;
+}
+
+textarea {
+  resize: none;
+  width: 456px;
+  height: 210px;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  width: 942px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-wrapper input, textarea {
+  padding: 15px;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  border: none;
+  border-radius: 1%;
+  text-transform: uppercase;
+}
+
+.send-message {
+  text-align: center;
+}
+
+.send-message input::placeholder {
+  color: #bbbbbb; 
+}
+
+.send-message textarea::placeholder {
+  color: #bbbbbb; 
+}
+
+button {
+  width: 242px;
+  height: 68px;
+  border: none;
+  border-radius: 3px;
+  background-color: #fed136;
+  padding: 15px;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form-list {
+  margin-bottom: 25px;
+  padding: 0px;
+}
+
+.form-wrapper input:valid, textarea:valid {
+  outline: 2px solid #31ca31;
+}
+
+.form-wrapper input:invalid, textarea:invalid {
+  outline: 2px solid #ca3131;
+}
