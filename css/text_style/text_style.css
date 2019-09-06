@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Kaushan Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kaushan Script'), local('KaushanScript-Regular'),
+         url('../../fonts/kaushan-script-v6-latin-regular.woff2') format('woff2'),
+         url('../../fonts/kaushan-script-v6-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../../fonts/montserrat-v12-latin-regular.woff2') format('woff2'),
+         url('../../fonts/montserrat-v12-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../../fonts/montserrat-v12-latin-700.woff2') format('woff2'),
+         url('../../fonts/montserrat-v12-latin-700.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../../fonts/roboto-v18-latin-regular.woff2') format('woff2'),
+         url('../../fonts/roboto-v18-latin-regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Italic'), local('Roboto-Italic'),
+         url('../../fonts/roboto-v18-latin-italic.woff2') format('woff2'), 
+         url('../../fonts/roboto-v18-latin-italic.woff') format('woff');
+}
+.header-invitation_subtitle{
+    margin: 0;
+    margin-bottom: 1.65rem;
+    color: #ffffff;
+    font-family: 'Kaushan Script';
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 6.5rem;
+}
+.header-invitation_title{
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 9.4rem;
+    font-weight: 700;
+    line-height: 8.9rem;
+    text-transform: uppercase;
+    margin-bottom: 6.7rem;
+}
+.header-invitation_button{
+    border: 0.2em solid #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 10rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: transparent;
+
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.services_collection_card::before{
+    position: absolute;
+    left: 1.875rem;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+}
+.main-services_subtitle, .main-team_subtitle{
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-family: 'Kaushan Script';
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.main-team_subtitle{
+    margin-bottom: 1.2rem;
+}
+.main-services_title, .main-team_title{
+    position: relative;
+    margin: 0;
+    margin-bottom: 6.7rem;
+    font-family: 'Montserrat';
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+.main-services_title::after, .main-team_title::after{
+    position: absolute;
+    top: 4.4rem;
+    left: 36rem;
+    display: block;
+    width: 3.75rem;
+    height: 0.1875rem;
+    background-color: #f38181;
+    content: '';
+}
+.main-team_title::after{
+    top: 4.3rem;
+}    
+.main-team_title{
+    margin-bottom: 5rem;
+}
+.card-title{
+    vertical-align: top;
+    margin-bottom: 0.875rem;
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.card-descr, .main-team_descr{
+    font-family: 'Roboto';
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #999999;
+}
+.main-team_descr{
+    margin: 0 auto;
+    line-height: 1.5em;
+    width: 62rem;
+    margin-bottom: 5.625rem;
+}
+.team_collection_card_name{
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    line-height: 1.3em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+.team_collection_card_occupation{
+    color: #999999;
+    font-family: 'Roboto';
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+
+.footer-text{
+    -ms-flex-preferred-size: 51.25rem;
+        flex-basis: 51.25rem;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    color: #333333;
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    line-height: 1em;
+    font-weight: 400;
+}
+.footer-text_name{
+    color: #f9c0c0;
+    font-weight: 700;
+}

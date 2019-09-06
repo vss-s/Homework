@@ -1,0 +1,49 @@
+@import "./header/header-nav.css";
+@import "./text_style/text_style.css";
+@import "./main/services.css";
+@import "./main/team.css";
+@import "./footer/footer.css";
+
+:root{
+    --line-grad: linear-gradient(to top,rgb(242,213,135,0.9),
+    rgb(239,139,138,0.9));
+}
+*{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    text-align: center;
+    background-image:var(--line-grad), url('../img/Layer_15.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 2.875rem;
+}
+.nav_wrapper{
+    width: 65rem;
+    margin: 0 auto;
+}
+.main{
+    text-align: center;
+    width: 76rem;
+    margin: 0 auto;
+    padding-bottom: 4.9375rem;
+}  
+footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid #e5e5e5;
+    width: 75rem;
+    margin: 0 auto;
+    height: 3.75rem;
+}     
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), 
+(min-resolution: 192dpi){
+    .header{
+        background-image: var(--line-grad), url('../img/Layer_15@2x.jpg');
+    }
+}

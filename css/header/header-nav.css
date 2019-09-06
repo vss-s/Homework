@@ -1,0 +1,87 @@
+.header-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    padding-top: 1.875rem;
+    min-height: 2.8125rem;
+    padding-bottom: 5.375rem;
+}
+.nav-menu{
+    -ms-flex-preferred-size: 31.25rem;
+        flex-basis: 31.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-menu_item {
+    cursor: pointer;
+}
+.header-nav_cart-icon{
+    height: 15px;
+}
+.header-nav_search-icon{
+    height: 18px;
+}
+.header-nav_cart-icon, .header-nav_search-icon{
+    -ms-flex-preferred-size: 1.125rem;
+        flex-basis: 1.125rem;
+    fill: #ffffff;
+    fill-rule: evenodd;
+    cursor: pointer;
+}
+.header-nav_cart-icon:hover,
+.header-nav_search-icon:hover{
+    fill: #fce38a;
+
+}
+.nav-menu_link{
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-transition: color 200ms linear;
+    -o-transition: color 200ms linear;
+    transition: color 200ms linear;
+    -webkit-transition: border 200ms linear;
+    -o-transition: border 200ms linear;
+    transition: border 200ms linear;
+
+}
+.nav-menu_item:hover .nav-menu_link{
+    color: #fce38a;
+    padding-bottom: 0.5em;
+    border-bottom: 0.2em solid #fce38a;
+}
+.nav-logo{
+    -ms-flex-preferred-size: 25.75rem;
+        flex-basis: 25.75rem;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    color: #ffffff; 
+}
+
+.header-invitation{
+    text-align: center;
+    margin: 0 auto;
+    width: 54%;
+    padding-bottom: 14.2rem;
+}
