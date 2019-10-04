@@ -1,0 +1,19 @@
+/*
+   Import partials below
+*/
+
+@import './normalize';
+// helpers
+@import "helpers/variables";
+// COMPONENTS
+@import "components/base";
+@import "components/banner";
+@import "components/wrapper";
+@import "components/flex";
+@import "components/header";
+@import "components/nav";
+@import "components/head";
+@import "components/service";
+@import "components/team";
+@import "components/mail";
+@import "components/footer";

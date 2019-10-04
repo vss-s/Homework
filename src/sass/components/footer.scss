@@ -1,0 +1,17 @@
+.footer {
+    border-top: 1px solid $main-white;
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__who-did {
+    font-size: 14px;
+    font-family: $main-font;
+    color: $main-font-color;
+    line-height: 17px;
+    &--red {
+        color: $red-color;
+    }
+}

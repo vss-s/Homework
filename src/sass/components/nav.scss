@@ -1,0 +1,34 @@
+.nav {
+    min-width: 49%;
+    max-width: 630px;
+}
+
+.nav__link,
+.nav__link--ico {
+    color: $main-white;
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+
+.nav__link {
+    border-bottom: 3px solid rgba(252, 227, 138, 0);
+}
+
+.nav__list:hover .nav__link {
+    color: $hover-color;
+    border-bottom: 3px solid $hover-color;
+}
+
+.nav__list:hover .nav__ico {
+    fill: $hover-color;
+}
+
+.nav__ico {
+    display: block;
+    width: 18px;
+    height: 18px;
+    fill: $main-white;
+}

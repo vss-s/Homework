@@ -1,0 +1,41 @@
+.mail {
+    display: flex;
+    justify-content: flex-end;
+    width: 390px;
+}
+
+.mail__button {
+    background-color: rgb(149, 225, 211);
+    width: 150px;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: $main-font;
+    color: $main-white;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 17px;
+    text-align: center;
+}
+
+.mail__input {
+    box-sizing: border-box;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: $main-white;
+    width: 232px;
+    height: 40px;
+    padding-left: 11px;
+    padding-top: 9px;
+    &::placeholder {
+        font-size: 15px;
+        font-family: $font-article;
+        color: rgb(204, 204, 204);
+        font-style: italic;
+        line-height: 24px;
+    }
+    &:invalid:focus {
+        outline: 1px solid red;
+    }
+    &:valid:focus {
+        outline: 1px solid green;
+    }
+}
